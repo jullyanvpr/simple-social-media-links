@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "inter";
+    src: url(assets/fonts/static/Inter-Regular.ttf),
+    url(assets/fonts/static/Inter-SemiBold.ttf),
+    url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+:root {
+    --offBlack: #141414;
+    --darkGrey: #1F1F1F;
+    --grey: #333333;
+    --white: #ffffff;
+    --green: #C5F82A;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--offBlack);
+}
+
+.background {
+    width: 21rem;
+    min-height: 30rem;
+    background-color: var(--darkGrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.profile__image {
+    width: 64px;
+}
+
+.profile__name {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+
+}
+
+.profile__location {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--green);
+}
+
+.profile__description {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.socialMedia{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.socialMedia__container {
+    height: 40px;
+    width: 80%;
+    background-color: var(--grey);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.socialMedia__container:hover {
+    background-color: #C5F82A;
+    color: var(--darkGrey);
+    transition: .3s;
+}
+
+.socialMedia__container__text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+/* Regra para que o texto mude a cor após o botão estar em hover */
+.socialMedia__container:hover .socialMedia__container__text {
+    color:var(--darkGrey);
+    transition: .3s;
+}
