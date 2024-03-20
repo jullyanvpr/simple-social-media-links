@@ -7,12 +7,6 @@
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Social links profile</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <main class="main">
@@ -24,19 +18,18 @@
         <p class="profile__description">"Front-end developer and CySA."</p>
       </div>
       <div class="socialMedia">
-        <div class="socialMedia__container"><a href="https://github.com/jullyanvpr" class="socialMedia__container__text">Github</a></div>
-        <div class="socialMedia__container"><a href="https://www.frontendmentor.io/profile/jullyanvpr" class="socialMedia__container__text">Frontend Mentor</a></div>
-        <div class="socialMedia__container"><a href="https://www.linkedin.com/in/jullyan-gomes-86224b116/" class="socialMedia__container__text">LinkedIn</a></div>
-        <div class="socialMedia__container"><a href="https://www.facebook.com/jullyan.gomes/" class="socialMedia__container__text">Facebook</a></div>
-        <div class="socialMedia__container"><a href="https://www.instagram.com/jullyanvpr/" class="socialMedia__container__text">Instagram</a></div>
+        <button class="socialMedia__container" onclick="openNewWindow('https://github.com/jullyanvpr')">Github</button>
+        <button class="socialMedia__container" onclick="openNewWindow('https://www.frontendmentor.io/profile/jullyanvpr')">Frontend Mentor</button>
+        <button class="socialMedia__container" onclick="openNewWindow('https://www.linkedin.com/in/jullyan-gomes-86224b116/')">LinkedIn</button>
+        <button class="socialMedia__container" onclick="openNewWindow('https://www.facebook.com/jullyan.gomes/')">Facebook</button>
+        <button class="socialMedia__container" onclick="openNewWindow('https://www.instagram.com/jullyanvpr/')">Instagram</button>
       </div>
     </div>
+    <script>
+      function openNewWindow(url) {
+      window.open(url, '_blank');
+      }
+    </script>
   </main>
-  <!-- 
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-  -->
 </body>
 </html>

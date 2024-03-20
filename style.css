@@ -32,7 +32,7 @@
 }
 
 .background {
-    width: 21rem;
+    width: 27rem;
     min-height: 30rem;
     background-color: var(--darkGrey);
     display: flex;
@@ -83,6 +83,7 @@
 }
 
 .socialMedia__container {
+    /* Layout do botão*/
     height: 40px;
     width: 80%;
     background-color: var(--grey);
@@ -91,6 +92,12 @@
     padding-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    /* Texto do botão */
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
 }
 
 .socialMedia__container:hover {
@@ -99,14 +106,8 @@
     transition: .3s;
 }
 
-.socialMedia__container__text {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--white);
-}
-
-/* Regra para que o texto mude a cor após o botão estar em hover */
-.socialMedia__container:hover .socialMedia__container__text {
-    color:var(--darkGrey);
-    transition: .3s;
+@media (max-width: 510px) {
+    .background{
+        width: 21rem;
+    }    
 }
